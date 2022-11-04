@@ -62,3 +62,5 @@ for maskLen in range (1, 13):
     if (theVlanList & aVlanList) == aVlanList :
         print ("vlan ", vlanFirst, " mask ", 4096 - segLen)
         theVlanList = theVlanList - aVlanList
+        if theVlanList == { }:
+          break
